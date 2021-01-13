@@ -17,7 +17,7 @@ async function setEndpoint() {
   // Performs text detection on the image file
   // const [result] = await client.textDetection('./resources/test2.png');
   let text;
-  const fileName = "./resources/test5_1.png";
+  const fileName = "./resources/test3.png";
   const imageFile = fs.readFileSync(fileName);
   const image = Buffer.from(imageFile).toString("base64");
   const request = {
@@ -29,7 +29,8 @@ async function setEndpoint() {
     }
   };
   
-  const [result] = await client.textDetection(request);
+  // const [result] = await client.textDetection(request);
+  const [result] = await client.documentTextDetection(request);
 
   const labels = result.textAnnotations;
   console.log('Text:');
