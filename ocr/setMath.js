@@ -15,12 +15,13 @@ async function setEndpoint() {
     'method': 'POST',
     'url': 'https://api.mathpix.com/v3/text',
     'headers': {
-      'app_id': 'ikaros0909_gmail_com_5c4b0a_9aa1c9',
-      'app_key': '1f7197c2e9f79e71b2ff',
+      'app_id': '',
+      'app_key': '',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        "src":"https://mathpix.com/examples/limit.jpg",
+        // "src":"https://mathpix.com/examples/limit.jpg",
+        "src":"https://github.com/ikaros0909/ocr_googleapi_test/blob/main/resources/eq_1_5.PNG?raw=true",        
         "formats":["text","data","html"],
         "data_options":{"include_asciimath":true,"include_latex":true}})
   };
