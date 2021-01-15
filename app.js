@@ -11,8 +11,11 @@ app.get('/start', function(req, res){
     res.send('start page'); 
 }); 
 
-app.use('/ocr', require('./ocr/setEndpoint'));
+app.use('/ocrs', require('./ocr/setEndpoint'));
+
+app.use('/ocrm', require('./ocr/setMath'));
 
 server.listen(3000, '127.0.0.1', function() { 
+    console.log('Server listen on address ' + server.address().address); 
     console.log('Server listen on port ' + server.address().port); 
 });
