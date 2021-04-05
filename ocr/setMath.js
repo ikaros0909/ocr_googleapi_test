@@ -21,7 +21,7 @@ async function setEndpoint() {
     },
     body: JSON.stringify({
         // "src":"https://mathpix.com/examples/limit.jpg",
-        "src":"https://github.com/ikaros0909/ocr_googleapi_test/blob/main/resources/sheet1.PNG?raw=true",        
+        "src":"https://github.com/ikaros0909/ocr_googleapi_test/blob/main/resources/test5.jpg?raw=true",        
         "formats":["text","data","html"],
         "data_options":{"include_asciimath":true,"include_latex":true}})
   };
