@@ -15,8 +15,8 @@ async function setEndpoint() {
     'method': 'POST',
     'url': 'https://api.mathpix.com/v3/text',
     'headers': {
-      'app_id': 'ikaros0909_gmail_com_5c4b0a_9aa1c9',
-      'app_key': '1f7197c2e9f79e71b2ff',
+      'app_id': 'testid',
+      'app_key': '1f7197c',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
